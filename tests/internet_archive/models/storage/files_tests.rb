@@ -15,6 +15,8 @@ Shindo.tests("Storage[:internetarchive] | files", ["internetarchive"]) do
   @directory = Fog::Storage[:internetarchive].directories.create(directory_attributes)
   # @directory.versioning = true
 
+  collection_tests(@directory.files, file_attributes, Fog.mocking?)
+
   model_tests(@directory.files, file_attributes, Fog.mocking?) do
 
     @instance
