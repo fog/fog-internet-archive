@@ -7,10 +7,7 @@ Fog.mock! if ENV["FOG_MOCK"] == "true"
 # if in mocked mode, fill in some fake credentials for us
 if Fog.mock?
   Fog.credentials = {
-    :google_storage_access_key_id     => "google_storage_access_key_id",
-    :google_storage_secret_access_key => "google_storage_secret_access_key",
-    :google_project                   => "google_project_name",
-    :google_client_email              => "fake@developer.gserviceaccount.com",
-    :google_key_location              => "~/fake.p12"
+    ia_access_key_id: "fake_id",
+    ia_secret_access_key: "fake_key",
   }.merge(Fog.credentials)
 end
