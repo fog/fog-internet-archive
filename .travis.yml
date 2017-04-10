@@ -1,6 +1,9 @@
 language: ruby
 cache: bundler
 sudo: false
+env:
+  - FOG_MOCK=true
+  - FOG_MOCK=false
 matrix:
   fast_finish: true
   include:
