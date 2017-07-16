@@ -51,3 +51,4 @@ Gemfile.lock
 
 # Fog specific stuff
 .fog
+.DS_Store
