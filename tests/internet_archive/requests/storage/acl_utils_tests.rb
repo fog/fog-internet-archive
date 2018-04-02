@@ -1,4 +1,4 @@
-require 'fog/internet_archive/requests/storage/acl_utils'
+require 'fog/storage/internet_archive/requests/acl_utils'
 
 Shindo.tests('Fog::Storage::InternetArchive | ACL utils', ["internetarchive"]) do
   tests(".hash_to_acl") do

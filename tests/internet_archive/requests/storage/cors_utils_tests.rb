@@ -1,4 +1,4 @@
-require 'fog/internet_archive/requests/storage/cors_utils'
+require 'fog/storage/internet_archive/requests/cors_utils'
 
 Shindo.tests('Fog::Storage::InternetArchive | CORS utils', ["internetarchive"]) do
   tests(".hash_to_cors") do
